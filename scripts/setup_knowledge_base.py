@@ -18,7 +18,7 @@ load_dotenv()
 
 from openai import OpenAI
 
-HANDBOOK_PATH = Path(__file__).parent.parent / "HANDBOOK_MAIN.md"
+HANDBOOK_PATH = Path(__file__).parent.parent / "HANDBOOK_MAIN (2).md"
 
 
 def main():
@@ -33,7 +33,7 @@ def main():
 
     client = OpenAI(api_key=api_key)
 
-    print("Uploading HANDBOOK_MAIN.md...")
+    print("Uploading HANDBOOK_MAIN (2).md...")
     with open(HANDBOOK_PATH, "rb") as f:
         uploaded = client.files.create(file=f, purpose="assistants")
     print(f"  File uploaded: {uploaded.id}")

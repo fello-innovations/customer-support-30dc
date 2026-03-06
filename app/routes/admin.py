@@ -8,7 +8,7 @@ from ..dependencies import verify_api_key, get_openai_client
 
 router = APIRouter(prefix="/admin", dependencies=[Depends(verify_api_key)])
 
-HANDBOOK_PATH = Path(__file__).parent.parent.parent / "HANDBOOK_MAIN.md"
+HANDBOOK_PATH = Path(__file__).parent.parent.parent / "HANDBOOK_MAIN (2).md"
 
 
 @router.get("/status", response_model=AdminStatusResponse)

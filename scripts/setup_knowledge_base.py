@@ -18,7 +18,7 @@ load_dotenv()
 
 from openai import OpenAI
 
-HANDBOOK_PATH = Path(__file__).parent.parent / "HANDBOOK_MAIN (2).md"
+HANDBOOK_PATH = Path(__file__).parent.parent / "HANDBOOK_MAIN_V2.md"
 
 
 def main():

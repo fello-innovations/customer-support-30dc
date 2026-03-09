@@ -8,7 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application
 COPY app/ ./app/
-COPY HANDBOOK_MAIN_V2.md .
+COPY HANDBOOK_MAIN_3.md .
 COPY scripts/ ./scripts/
 
 # Non-root user for security
